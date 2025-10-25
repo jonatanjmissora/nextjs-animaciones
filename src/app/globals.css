@@ -24,3 +24,116 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*                 MODAL ANIMADO                */
+#modal[open] {
+  scale: 1;
+  opacity: 1;
+  transition: scale 0.2s ease-in-out, 
+    opacity 0.2s ease-in-out;
+  @starting-style {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+#modal {
+  scale: 0.5;
+  opacity: 0;
+  transition: scale 0.2s ease,
+    opacity 0.2s ease,
+    display 0.2s ease allow-discrete;
+}
+
+#modal2 {
+  opacity: 0;
+  translate: -50% -30%;
+  transition-property: overlay display opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transition-behavior: allow-discrete;
+}
+#modal2[open] {
+  opacity: 1;
+  translate: -50% -50%;
+  @starting-style {
+    opacity: 0;
+    translate: -50% -70%;
+  }
+}
+
+/*                 TOGGLE CONTENT                */
+#content1 {
+  display: none;
+  opacity: 0;
+  translate: -100% 0;
+  transition-property: overlay display opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+}
+#content1.show {
+  display: block;
+  opacity: 1;
+  translate: 0 0;
+  @starting-style {
+    opacity: 0;
+    translate: -100% 0;
+  }
+}
+#content2 {
+  display: none;
+  opacity: 0;
+  translate: 100% 0;
+  transition-property: overlay display opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+}
+#content2.show {
+  display: block;
+  opacity: 1;
+  translate: 0 0;
+  @starting-style {
+    opacity: 0;
+    translate: 100% 0;
+  }
+}
+
+#content21 {
+  display: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: bottom left;
+  transition-property: overlay display opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+}
+#content21.show {
+  display: block;
+  opacity: 1;
+  scale: 1;
+  @starting-style {
+    opacity: 0;
+    scale: 0;
+  }
+}
+#content22 {
+  display: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: bottom right;
+  transition-property: overlay display opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+}
+#content22.show {
+  display: block;
+  opacity: 1;
+  scale: 1;
+  @starting-style {
+    opacity: 0;
+    scale: 0;
+  }
+}
