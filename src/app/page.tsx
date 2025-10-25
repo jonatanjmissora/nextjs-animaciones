@@ -1,4 +1,8 @@
+import Footer from "@/_components/footer"
 import Modal from "@/_components/modal"
+import ScrollTextAndImageReveal from "@/_components/scroll-text-and-image-reveal"
+import ScrollTextFocus from "@/_components/scroll-text-focus"
+import TimelineReveal from "@/_components/timeline-reveal"
 import ToggleContent from "@/_components/toggle-content"
 
 export default function Home() {
@@ -7,6 +11,10 @@ export default function Home() {
 			<main className="">
 				<Modal />
 				<ToggleContent />
+				<ScrollTextAndImageReveal />
+				<TimelineReveal />
+				<ScrollTextFocus />
+				<Footer />
 			</main>
 		</div>
 	)

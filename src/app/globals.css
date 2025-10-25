@@ -137,3 +137,132 @@ body {
     scale: 0;
   }
 }
+
+/*                 SCROLL TEXT AND IMAGE REVEAL                */
+.autoShowTitle {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    translate: 0 200px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.autoShowSubtitle {
+  animation: text-appear2 both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear2 {
+  from {
+    opacity: 0;
+    color: white;
+  }
+  to {
+    opacity: 1;
+    color: red;
+  }
+}
+
+.imageReveal {
+  animation: image-reveal both;
+  
+}
+.imageReveal:nth-child(1) {
+  animation-timeline: view(10% 5%);
+}
+.imageReveal:nth-child(2) {
+  animation-timeline: view(25% 20%);
+}
+.imageReveal:nth-child(3) {
+  animation-timeline: view(40% 35%);
+}
+.imageReveal:nth-child(4) {
+  animation-timeline: view(55% 50%);
+}
+
+@keyframes image-reveal {
+  from {
+    filter: saturate(0) contrast(4) brightness(.1) blur(5px);
+    opacity: 0;
+    scale: 0.95;
+    translate: 0 100px;
+  }
+  to {
+    filter: none;
+    opacity: 1;
+    scale: 1;
+    translate: 0 0;
+  }
+}
+
+/*                 TIMELINE REVEAL                */
+.fadeUp {
+  animation: fade-up both;
+  animation-timeline: view();
+}
+
+.fadeUp:nth-child(1) {
+  animation-range: entry 20% cover 40%;
+}
+.fadeUp:nth-child(2) {
+  animation-range: entry 30% cover 50%;
+}
+.fadeUp:nth-child(3) {
+  animation-range: entry 40% cover 60%;
+}
+.fadeUp:nth-child(4) {
+  animation-range: entry 50% cover 70%;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    translate: 0 10px;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+/*                 SCROLL TEXT FOCUS                */
+.focusText {
+  animation: focus-text linear both;
+  animation-timeline: view(30% auto);
+}
+
+@keyframes focus-text {
+  0% {
+    filter: blur(10px);
+    color: cyan
+  }
+  40%{
+    color: cyan;
+    letter-spacing: 1px;
+  }
+  45%, 55% {
+    filter: blur(0);
+    color: white;
+    letter-spacing: 6px;
+  }
+  60%{
+    color: cyan;
+    letter-spacing: 1px;
+  }
+  100% {
+    filter: blur(10px);
+    color: cyan;
+  }
+}
