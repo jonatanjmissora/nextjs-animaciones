@@ -2,12 +2,14 @@ import Image from "next/image"
 
 export default function CardAndDescription() {
 	return (
-		<section className="w-screen sm:h-[250dvh] 2xl:h-[150dvh] flex flex-col gap-8 items-center justify-center bg-blue-950 p-20">
-			<h2 className="text-4xl font-bold tracking-wider">Card & description</h2>
+		<section className="w-screen sm:h-[200dvh] 2xl:h-[150dvh] flex flex-col gap-36 items-center justify-center bg-blue-950 p-10">
+			<h2 className="reveal-opacity text-4xl font-bold tracking-wider">
+				Card & description
+			</h2>
 			<div className="flex items-center gap-20 w-3/4 h-[50dvh]">
 				<div className="w-1/2 h-full flex items-center justify-end">
 					<div
-						className={`element-reveal left relative w-3/4 h-1/2 rounded-lg shadow-[3px_3px_5px_0_rgba(0,0,0,0.5)] overflow-hidden`}
+						className={`element-reveal left relative w-full h-full 2xl:h-1/2 rounded-lg shadow-[3px_3px_5px_0_rgba(0,0,0,0.5)] overflow-hidden`}
 					>
 						<Image
 							className="object-cover"
@@ -46,7 +48,7 @@ export default function CardAndDescription() {
 				</div>
 				<div className="element-reveal right w-1/2 h-full flex items-center justify-start">
 					<div
-						className={`relative w-3/4 h-1/2 rounded-lg shadow-[3px_3px_5px_0_rgba(0,0,0,0.5)] overflow-hidden`}
+						className={`relative w-full h-full 2xl:h-1/2 rounded-lg shadow-[3px_3px_5px_0_rgba(0,0,0,0.5)] overflow-hidden`}
 					>
 						<Image
 							className="object-cover"

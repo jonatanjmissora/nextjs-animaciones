@@ -7,7 +7,8 @@ import ToggleContent from "@/_components/toggle-content"
 import Hero from "@/_components/hero"
 import ScrollGallery01Reveal from "@/_components/scroll-gallerie01-reveal"
 import ScrollGallerie02Reveal from "@/_components/scroll-gallerie02-reveal"
-import CardAndDescription from "@/_components/card-and-description"
+import CardAndDescription from "@/_components/scroll-card-and-description"
+import ImageSelect from "@/_components/image-select"
 
 export default function Home() {
 	return (
@@ -21,6 +22,7 @@ export default function Home() {
 				<ScrollGallery01Reveal />
 				<ScrollGallerie02Reveal />
 				<CardAndDescription />
+				<ImageSelect />
 				<ScrollTextFocus />
 				<Footer />
 			</main>

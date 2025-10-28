@@ -25,7 +25,7 @@ export default function ScrollGallerie01Reveal() {
 			<h2 className="text-4xl font-bold tracking-widest text-white">
 				Scroll Gallerie 01 Reveal bottom/scale
 			</h2>
-			<article className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-4 w-3/4">
+			<article className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-3/4">
 				{Array.from({ length: 16 }).map((_, index) => {
 					const randomBg = bgColors[Math.floor(Math.random() * bgColors.length)]
 					return (

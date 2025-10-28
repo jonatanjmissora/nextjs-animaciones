@@ -2,7 +2,7 @@
 import Image from "next/image"
 export default function TimelineReveal() {
 	return (
-		<section className="w-screen sm:h-[150dvh] 2xl:h-screen flex flex-col gap-24 items-center bg-blue-900 p-20">
+		<section className="w-screen sm:h-[200dvh] 2xl:h-screen flex flex-col gap-24 items-center bg-blue-900 p-20">
 			<h2 className="text-4xl font-bold tracking-widest text-white w-full text-center">
 				timeline reveal
 			</h2>
