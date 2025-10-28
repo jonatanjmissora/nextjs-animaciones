@@ -12,6 +12,10 @@
 	--font-mono: var(--font-geist-mono);
 }
 
+@view-transition {
+	navigation: auto;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #0a0a0a;
@@ -34,6 +38,12 @@ html.lenis body {
 .lenis.lenis-smooth {
 	scroll-behavior: auto !important;
 }
+html {
+	view-transition-name: none;
+}
+::view-transition-group(root) {
+	animation-duration: 2s;
+}
 
 .lenis.lenis-smooth [data-lenis-prevent] {
 	overscroll-behavior: contain;
@@ -49,7 +59,8 @@ html.lenis body {
 
 /* 		                HEADER                */
 .header {
-	animation: slide-down 1s ease-in-out;
+	top: -10%;
+	animation: slide-down 1s ease-in-out forwards;
 }
 
 @keyframes slide-down {
@@ -81,7 +92,7 @@ html.lenis body {
 
 .reveal-bottom {
 	opacity: 0;
-	animation: slide-down 0.5s ease-in-out forwards;
+	animation: slide-down2 0.5s ease-in-out forwards;
 }
 .reveal-bottom.title {
 	animation-delay: 0.3s;
@@ -95,7 +106,7 @@ html.lenis body {
 	animation-delay: 1s;
 }
 
-@keyframes slide-down {
+@keyframes slide-down2 {
 	from {
 		opacity: 0;
 		translate: 0 50px;
