@@ -16,6 +16,7 @@ export default function TimelineReveal() {
 								src="https://dummyimage.com/150x4:3/0f0/0f0"
 								fill
 								alt="foto1"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							/>
 						</div>
 					</div>
@@ -42,6 +43,7 @@ export default function TimelineReveal() {
 								width="300"
 								height="150"
 								alt="foto1"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							/>
 						</div>
 					</div>
@@ -56,6 +58,7 @@ export default function TimelineReveal() {
 								width="300"
 								height="150"
 								alt="foto1"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							/>
 						</div>
 					</div>
@@ -82,6 +85,7 @@ export default function TimelineReveal() {
 								width="300"
 								height="150"
 								alt="foto1"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							/>
 						</div>
 					</div>

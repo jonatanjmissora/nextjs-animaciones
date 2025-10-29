@@ -38,6 +38,7 @@ export default function ScrollGallerie01Reveal() {
 								src={`https://dummyimage.com/3:4x250/${randomBg}/${randomBg}`}
 								fill
 								alt="foto1"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							/>
 						</div>
 					)

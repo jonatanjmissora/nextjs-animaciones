@@ -29,6 +29,26 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/*                 VIEW TRANSITION                */
+html {
+	view-transition-name: none;
+	-webkit-view-transition-name: none;
+}
+::view-transition-group(selected-img),
+::view-transition-group(in-img) {
+	animation-duration: 0.75s;
+}
+
+button[data-id="main-image"]:not(:has(img)),
+.img-cont:not(:has(img)) {
+	display: none;
+}
+
+button[data-id="main-image"]:has(img),
+.img-cont:has(img) {
+	display: block;
+}
+
 /*                 LENIS                */
 html.lenis,
 html.lenis body {
@@ -37,12 +57,6 @@ html.lenis body {
 
 .lenis.lenis-smooth {
 	scroll-behavior: auto !important;
-}
-html {
-	view-transition-name: none;
-}
-::view-transition-group(root) {
-	animation-duration: 2s;
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
@@ -58,6 +72,9 @@ html {
 }
 
 /* 		                HEADER                */
+.header {
+	view-transition-name: none;
+}
 .header {
 	top: -10%;
 	animation: slide-down 1s ease-in-out forwards;
@@ -341,16 +358,20 @@ html {
 	animation: image-reveal-sides both;
 }
 .gal01ImageReveal:nth-child(4n + 1) {
-	animation-timeline: view(10% 5%);
+	animation-timeline: view();
+	animation-range: cover 10% cover 50%;
 }
 .gal01ImageReveal:nth-child(4n + 2) {
-	animation-timeline: view(20% 15%);
+	animation-timeline: view();
+	animation-range: cover 15% cover 55%;
 }
 .gal01ImageReveal:nth-child(4n + 3) {
-	animation-timeline: view(30% 25%);
+	animation-timeline: view();
+	animation-range: cover 20% cover 60%;
 }
 .gal01ImageReveal:nth-child(4n + 4) {
-	animation-timeline: view(40% 40%);
+	animation-timeline: view();
+	animation-range: cover 25% cover 65%;
 }
 
 @keyframes image-reveal-bottom {
@@ -386,10 +407,12 @@ html {
 	animation: image-reveal-side-left both;
 }
 .gal02ImageReveal:nth-child(2n + 1) {
-	animation-timeline: view(10% 5%);
+	animation-timeline: view();
+	animation-range: cover 15% cover 55%;
 }
 .gal02ImageReveal:nth-child(2n + 2) {
-	animation-timeline: view(10% 5%);
+	animation-timeline: view();
+	animation-range: cover 10% cover 50%;
 }
 
 @keyframes image-reveal-side-left {

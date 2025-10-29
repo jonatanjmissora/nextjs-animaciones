@@ -16,6 +16,7 @@ export default function CardAndDescription() {
 							src={`https://dummyimage.com/3:4x250/f0f/f0f`}
 							fill
 							alt="foto1"
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>
@@ -55,6 +56,7 @@ export default function CardAndDescription() {
 							src={`https://dummyimage.com/3:4x250/f0f/f0f`}
 							fill
 							alt="foto1"
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>

@@ -19,6 +19,7 @@ export default function ScrollTextAndImageReveal() {
 					width="200"
 					height="300"
 					alt="foto1"
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				/>
 				<Image
 					className="imageReveal"
@@ -26,6 +27,7 @@ export default function ScrollTextAndImageReveal() {
 					width="200"
 					height="300"
 					alt="foto1"
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				/>
 				<Image
 					className="imageReveal"
@@ -33,6 +35,7 @@ export default function ScrollTextAndImageReveal() {
 					width="200"
 					height="300"
 					alt="foto1"
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				/>
 				<Image
 					className="imageReveal"
@@ -40,6 +43,7 @@ export default function ScrollTextAndImageReveal() {
 					width="200"
 					height="300"
 					alt="foto1"
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				/>
 			</div>
 		</section>

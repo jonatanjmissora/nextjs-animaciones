@@ -5,6 +5,7 @@ export default function Hero() {
 		<section className="w-screen h-screen flex flex-col gap-12 items-center justify-center bg-blue-900 p-20">
 			<div className="reveal-scale h-[50dvh] w-3/4 relative overflow-hidden rounded-lg shadow-[3px_3px_6px_rgba(0,0,0,0.5)]">
 				<Image
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					className=""
 					src="https://dummyimage.com/150x4:3/0ff/0ff"
 					fill
