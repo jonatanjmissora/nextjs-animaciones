@@ -11,6 +11,7 @@ import CardAndDescription from "@/_components/scroll-card-and-description"
 import ImageSelect from "@/_components/image-select"
 import ImageSelect2 from "@/_components/image-select2"
 import ScrollHero from "@/_components/scroll-hero"
+import ScrollParallax from "@/_components/scroll-parallax"
 
 export default function Home() {
 	return (
@@ -28,6 +29,7 @@ export default function Home() {
 				<ImageSelect2 />
 				<ScrollTextFocus />
 				<ScrollHero />
+				<ScrollParallax />
 				<Footer />
 			</main>
 		</div>

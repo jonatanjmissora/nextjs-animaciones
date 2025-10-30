@@ -535,3 +535,22 @@ html.lenis body {
 		color: cyan;
 	}
 }
+
+/*			SCROLL HERO			*/
+.hero-img {
+	opacity: 0.5;
+	animation: hero-img-fade linear forwards;
+	animation-timeline: view();
+	animation-range: cover 50% cover 90%;
+}
+
+@keyframes hero-img-fade {
+	from {
+		opacity: 0.5;
+		scale: 1;
+	}
+	to {
+		opacity: 0;
+		scale: 2;
+	}
+}
