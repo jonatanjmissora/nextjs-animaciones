@@ -24,7 +24,7 @@ export default function Header() {
 			<nav className="flex gap-20">
 				<Link href="/">Home</Link>
 				<Link href="/parallax">Parallax</Link>
-				<Link href="/">Contact</Link>
+				<Link href="/multipage">Multipage</Link>
 				<Link href="/">Admin</Link>
 			</nav>
 		</header>

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function ScrollHero() {
 	return (
-		<section className="w-screen h-[200dvh] bg-slate-800 relative z-0 pt-[400px] flex justify-center">
+		<section className="w-screen h-[250dvh] bg-slate-800 relative z-0 pt-[400px] flex justify-center">
 			<div className="sticky top-[40dvh] left-0 w-[450px] h-max flex flex-col gap-12 items-center justify-center z-2 text-[#222] ">
 				<span className="text-7xl font-bold tracking-wider">HERO TITLE</span>
 				<span className="text-2xl font-bold tracking-wider">HERO SUBTITLE</span>
