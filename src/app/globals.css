@@ -572,12 +572,9 @@ html.lenis body {
 }
 
 /*                 VIEW TRANSITION                */
-@view-transition {
+/* @view-transition {
 	navigation: auto;
-}
-::view-transition-group(*) {
-	animation-duration: 2.75s;
-}
+} */
 
 /*                 VIEW TRANSITION                */
 html {
@@ -585,16 +582,38 @@ html {
 	-webkit-view-transition-name: none;
 }
 ::view-transition-group(selected-img),
-::view-transition-group(in-img) {
+::view-transition-group(in-img),
+::view-transition-group(out-img) {
 	animation-duration: 0.75s;
 }
 
-::view-transition-old(root) {
+a.active::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	z-index: -1;
+	view-transition-name: active-nav-elem;
+}
+
+::view-transition-group(active-nav-elem) {
+	animation-duration: 1.75s;
+}
+::view-transition-old(active-nav-elem),
+::view-transition-new(active-nav-elem) {
+	height: 100%;
+}
+::view-transition-old(selected-img) {
+	translate: -100% 0;
+}
+::view-transition-new(selected-img) {
+	translate: 100% 0;
+}
+
+::view-transition-group(selected-img) {
 	animation-timeline: fade-left 1s fordwards;
 }
-::view-transition-new(root) {
-	animation-timeline: fade-right 1s fordwards;
-}
+
 @keyframes fade-left {
 	from {
 		opacity: 0;
@@ -614,4 +633,28 @@ html {
 		opacity: 1;
 		translate: 0 0;
 	}
+}
+
+/* 			PARALLAX 2					*/
+
+.parallax-1 {
+	background-image: url("https://picsum.photos/1200/1300");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.parallax-2 {
+	background-image: url("https://picsum.photos/1201/1300");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.parallax-3 {
+	background-image: url("https://picsum.photos/1202/1300");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }

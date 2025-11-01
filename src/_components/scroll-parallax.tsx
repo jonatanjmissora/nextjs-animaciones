@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function ScrollParallax() {
 	return (
-		<section className="bg-blue-900 px-[15dvw] h-dvh overflow-y-auto overflow-x-hidden perspective-[10px]">
+		<section className="bg-blue-900 h-dvh overflow-y-auto overflow-x-hidden perspective-[10px]">
 			<ContentSection src="https://fastly.picsum.photos/id/191/1500/1000.jpg?hmac=44cDRFArl9vbT-j5LRBRLEl1WCZPmjHeiL8D-381Hdk" />
 			<ContentSection src="https://fastly.picsum.photos/id/182/1500/1000.jpg?hmac=BoYUh0m18i5ftcNK-B7LPtrsLZUegrYAFC0emRt-3lY" />
 			<ContentSection src="https://fastly.picsum.photos/id/1051/1500/1000.jpg?hmac=9oQV96UWnYv6UzAghmeg25lkDwASxH_jdu2-Mlg3DVY" />
