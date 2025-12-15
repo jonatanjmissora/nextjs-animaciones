@@ -17,30 +17,41 @@ export default function ElementsPage() {
 		<section className="w-screen h-screen bg-blue-900 flex flex-col gap-12 items-center justify-center">
 			<h2 className="text-6xl font-bold tracking-widest">Elements Page</h2>
 			<ul className="grid grid-cols-4">
-				{imgArray.map((image, index) => (
-					<li key={index} className="p-10 w-[250px] h-[250px] relative">
-						<Link href={`/multipage/${index}`} className="relative z-5">
-							<Image
-								src={image}
-								alt={`photo-${index}`}
-								width={250}
-								height={250}
-								className="object-cover shadow-[3px_3px_5px_#00000050]"
-								style={{
-									viewTransitionName: `selected-img-${index}`,
-								}}
-							/>
-						</Link>
-						<Link
-							href={`/multipage/${index}`}
-							className="p-4 px-6 bg-white absolute z-1 -bottom-4 left-18 right-4 text-black flex justify-center items-center rounded-lg shadow-[3px_3px_5px_#00000050]"
-						>
-							<h3 className="text-2xl font-bold tracking-wider">
-								Foto {index}
-							</h3>
-						</Link>
-					</li>
-				))}
+				<li className="p-10 w-[250px] h-[250px] relative">
+					<Link href={`/multipage/0`} className="relative z-5">
+						<Image
+							src={imgArray[0]}
+							alt={`photo-1`}
+							width={250}
+							height={250}
+							className="object-cover shadow-[3px_3px_5px_#00000050] img-group-1"
+						/>
+					</Link>
+					<Link
+						href={`/multipage/1`}
+						className="p-4 px-6 bg-white absolute z-1 -bottom-4 left-18 right-4 text-black flex justify-center items-center rounded-lg shadow-[3px_3px_5px_#00000050]"
+					>
+						<h3 className="text-2xl font-bold tracking-wider">Foto 1</h3>
+					</Link>
+				</li>
+
+				<li className="p-10 w-[250px] h-[250px] relative">
+					<Link href={`/multipage/1`} className="relative z-5">
+						<Image
+							src={imgArray[1]}
+							alt={`photo-2`}
+							width={250}
+							height={250}
+							className="object-cover shadow-[3px_3px_5px_#00000050] img-group-2"
+						/>
+					</Link>
+					<Link
+						href={`/multipage/2`}
+						className="p-4 px-6 bg-white absolute z-1 -bottom-4 left-18 right-4 text-black flex justify-center items-center rounded-lg shadow-[3px_3px_5px_#00000050]"
+					>
+						<h3 className="text-2xl font-bold tracking-wider">Foto 2</h3>
+					</Link>
+				</li>
 			</ul>
 		</section>
 	)

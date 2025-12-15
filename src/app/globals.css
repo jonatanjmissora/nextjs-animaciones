@@ -572,9 +572,9 @@ html.lenis body {
 }
 
 /*                 VIEW TRANSITION                */
-/* @view-transition {
+@view-transition {
 	navigation: auto;
-} */
+}
 
 /*                 VIEW TRANSITION                */
 html {
@@ -657,4 +657,14 @@ a.active::before {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.img-group-1 {
+	view-transition-name: selected-img-1;
+}
+.img-group-2 {
+	view-transition-name: selected-img-2;
+}
+.img-selected {
+	view-transition-name: selected-img-1;
 }

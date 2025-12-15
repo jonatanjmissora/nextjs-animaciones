@@ -35,10 +35,7 @@ export default async function ElementPage({
 						src={img}
 						alt={`photo-${id}`}
 						fill
-						className="object-cover shadow-[3px_3px_5px_#00000050]"
-						style={{
-							viewTransitionName: `selected-img-${id}`,
-						}}
+						className="object-cover shadow-[3px_3px_5px_#00000050] img-selected"
 					/>
 				</div>
 				<div className="flex flex-col gap-12 rounded-lg shadow-[3px_3px_5px_#00000050] bg-white p-20 text-black">
